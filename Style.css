@@ -66,4 +66,30 @@ body{
 .clock .time div:last-child span:nth-child(2){
   background: #EF244C;
 }
+@media screen and (min-width:500px){
+  .clock .time div{
+    margin: 0 10px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #0003);
+  }
+  
+  .clock .time div span {
+    height: 200px;
+    width: 250px;
+    font-weight: 700;
+    z-index: 10;
+    font-size: 70px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .5)
+    }
+  }
+  .clock .time div span:nth-child(2) {
+    height: 50px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: none;
+    z-index: 9;
+  }
+  
+}
+
 
